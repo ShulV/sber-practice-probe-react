@@ -1,6 +1,7 @@
 import React from 'react'
 import TodoList from './Todo/TodoList';
 import NoTodos from './Todo/NoTodos';
+import AddTodo from './Todo/AddTodo';
 
 
 
@@ -8,9 +9,9 @@ import NoTodos from './Todo/NoTodos';
 
 function App() {
   let [todos, setTodos] = React.useState([
-    {id: 1, completed: false, title: 'Купить хлеб'},
-    {id: 2, completed: true, title: 'Купить масло'},
-    {id: 3, completed: false, title: 'Купить молоко'},
+    {id: 1, completed: false, title: 'Сдать практику'},
+    {id: 2, completed: true, title: 'Бросить политех'},
+    {id: 3, completed: false, title: 'Закончить военку'},
   ])
 
   function toggleTodo(id) {
@@ -22,9 +23,22 @@ function App() {
     }))
   }
 
+  function addTodo(title) {
+    return setTodos(
+      todos.concat([
+        {
+          id: Date.now(),
+          completed: false,
+          title: title,  
+        }
+      ])
+    )
+  }
+
   return (
     <div className='wrapper'>
       <h1>ReactTutorial</h1>
+      <AddTodo onCreate={addTodo}/>
       {todos.length ? <TodoList todos={todos} onToggle={toggleTodo}/> : <NoTodos />}
     </div>
   );

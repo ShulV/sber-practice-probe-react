@@ -21,3 +21,11 @@ code {
 .done {
   text-decoration: line-through;
 }
+
+.adding-form {
+  margin-bottom: 1rem;
+}
+
+.adding-form-input {
+  margin-right: 1rem;
+}

@@ -32,7 +32,6 @@ function TodoItem({ todo, index, onChange}) {
                 <strong>{ index + 1}</strong>
                 &nbsp;
                 { todo.title }
-                { console.log(todo)}
             </span>
             <button>x</button>
         </li>
