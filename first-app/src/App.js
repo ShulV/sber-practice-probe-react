@@ -1,5 +1,9 @@
 import TodoList from "./Todo/TodoList";
 
+function toggleTodo(id) {
+  console.log('toggle todo', id)
+}
+
 function App() {
   const todos=[
     {id: 1, completed: false, title: 'Купить хлеб'},
@@ -10,7 +14,7 @@ function App() {
   return (
     <div className='wrapper'>
       <h1>ReactTutorial</h1>
-      <TodoList todos={todos}/>
+      <TodoList todos={todos} onToggle={toggleTodo}/>
     </div>
   );
 }
