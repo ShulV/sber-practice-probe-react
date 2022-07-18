@@ -15,10 +15,15 @@ const styles = {
     }
 }
 
-export default function TodoItem({ todo, index, onChange}) {
+function TodoItem({ todo, index, onChange}) {
+    let classes = []
+    if (todo.completed) {
+        classes.push('done')
+    }
+
     return (
         <li style={styles.li}>
-            <span>
+            <span className={classes.join(' ')}>
                 <input 
                 type='checkbox' 
                 onChange={()=>onChange(todo.id)}
@@ -32,3 +37,5 @@ export default function TodoItem({ todo, index, onChange}) {
         </li>
     );
   }
+
+export default TodoItem
