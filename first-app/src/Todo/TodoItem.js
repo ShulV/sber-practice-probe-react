@@ -27,6 +27,7 @@ function TodoItem({ todo, index, onChange}) {
                 <input 
                 type='checkbox' 
                 onChange={()=>onChange(todo.id)}
+                checked={todo.completed}
                 />
                 <strong>{ index + 1}</strong>
                 &nbsp;
