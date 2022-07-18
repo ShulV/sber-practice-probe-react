@@ -1,3 +1,5 @@
+import React from 'react'
+
 const styles = {
     li: {
         display: 'flex',
@@ -24,6 +26,7 @@ export default function TodoItem({ todo, index, onChange}) {
                 <strong>{ index + 1}</strong>
                 &nbsp;
                 { todo.title }
+                { console.log(todo)}
             </span>
             <button>x</button>
         </li>
