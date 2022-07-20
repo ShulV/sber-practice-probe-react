@@ -29,3 +29,9 @@ code {
 .adding-form-input {
   margin-right: 1rem;
 }
+
+.rm-btn {
+  border-radius: 50%;
+  outline: 2px solid red;
+  border-width: 0;
+}
