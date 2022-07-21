@@ -35,3 +35,37 @@ code {
   outline: 2px solid red;
   border-width: 0;
 }
+
+/* Loader */
+
+@keyframes ldio-l7vihtcccgi {
+  0% { background: #f8b26a }
+  12.5% { background: #f8b26a }
+  12.625% { background: #e15b64 }
+  100% { background: #e15b64 }
+}
+.ldio-l7vihtcccgi div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #e15b64;
+  animation: ldio-l7vihtcccgi 1s linear infinite;
+}
+.loadingio-spinner-blocks-zpgajdsxv9b {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-l7vihtcccgi {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-l7vihtcccgi div { box-sizing: content-box; }
+
+/*  */
